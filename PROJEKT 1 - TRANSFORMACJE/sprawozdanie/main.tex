@@ -1,0 +1,89 @@
+\documentclass[10pt,a4paper]{article}
+
+% ------------------------- PREAMBUŁA -------------------
+\input{settings/packages.tex}   % ścieżka względna do katalogu z ustawieniami
+\graphicspath{{images/}}    % stała ścieżka względna do katalogu z  obrazkami.
+
+
+
+% METADATA
+% DOCUMENT METADATA
+\newcommand{\logoGIK}{settings/WGiK-znak.png}
+\newcommand{\authorName}{Julia Szczęsna \\ grupa 1, Numery Indeksu: 312035}
+\newcommand{\titeReport}{Projekt 1} % <<< here insert short title in the food
+\newcommand{\titleLecture}{informatyka Geodezyjna\\ sem. IV, ćwiczenia, rok akad. 2021-2022} % <<< insert title of presentation
+\newcommand{\kind}{report}
+%\newcommand{\mymail}{\href{mailto:01160065@pw.edu.pl}{01160065@pw.edu.pl}}
+\newcommand{\supervisor}{....}
+\newcommand{\gikweb}{\href{www.gik.pw.edu.pl}{www.gik.pw.edu.pl}}
+\newcommand{\institut}{Zakład Geodezjii i Astronomii Geodezyjnej}
+\newcommand{\faculty}{Wydział Geodezji i Kartografii}
+\newcommand{\university}{Politechnika Warszawska}
+\newcommand{\city}{Warszawa}
+\newcommand{\thisyear}{2022}
+%\date{}
+% PDF METADATA
+\pdfinfo
+{
+	/Title       (GIK PW)
+	/Creator     (TeX)
+	/Author      (Julia Szczęsna)
+}
+
+
+% ------------------------- POCZATEK DOKUMENTU -------------------
+\begin{document}
+	% ----------------------------------------------------------------
+	% ----------------------------  Title page
+	% ----------------------------------------------------------------
+	\begin{center} 
+		\rule{\textwidth}{.5pt} \\
+		\vspace{1.0cm}
+		\includegraphics[width=.4\paperwidth]{\logoGIK}
+		\vspace{0.5cm} \\
+		\Large \textsc{\titeReport}
+		\vspace{0.5cm} \\  
+		\large \textsc{\titleLecture}
+		\vspace{0.5cm}\\
+		\textsc{\authorName}  \\
+		\textsc{\faculty}, \textsc{\university}  \\ 
+		\city, \today
+	\end{center} 
+	\rule{\textwidth}{1.5pt}
+	
+	
+	\newpage
+	% ---------------------------------------------------------------
+	% ----------------------------  Table of content
+	% ----------------------------------------------------------------
+	\tableofcontents 								% wyświetla spis treści
+	%\addcontentsline{to}{chapter}{Spis treści} 	% dodaje pozycję do spisu treści
+	% \listoffigures  								% wyświetla spis rysunków
+	%\addcontentsline{toc}{chapter}{Lista rysunków} % dodaje pozycję do spisu treści
+	% \listoftables 									% wyświetla spis rysunków
+	%\addcontentsline{toc}{chapter}{lista tabel}	% dodaje pozycję do spisu treści
+	\newpage
+	%
+	
+	
+	% ----------------------------------------------------------------
+	% ----------------------------  Sekcje i podsekcje  
+	% ----------------------------------------------------------------
+	
+	
+	\input{content/1.Tresc.tex}  
+	\newpage      
+	\input{content/2.Instrukcja.tex}
+	\newpage
+	\input{content/3.Link.tex}
+	
+	
+	
+	
+	
+	
+	% ----------------------------------------------------------------
+	% ----------------------------  Bibliography  
+	% ----------------------------------------------------------------
+	
+\end{document}

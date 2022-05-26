@@ -1,0 +1,4 @@
+\babel@toc {polish}{}\relax 
+\contentsline {section}{\numberline {1}Założenia do wykonania projektu.}{3}{section.1}%
+\contentsline {section}{\numberline {2}Instrukcja obsługi programu.}{4}{section.2}%
+\contentsline {section}{\numberline {3}Link do programu.}{5}{section.3}%
